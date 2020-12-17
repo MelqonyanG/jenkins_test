@@ -1,10 +1,10 @@
 from flask import Flask
-server = Flask(__name__)
+app= Flask(__name__)
 
-@server.route("/")
+@app.route("/")
 def index():
     return "Hello world"
 
 
 if __name__ == "__main__":
-    server.run(host="0.0.0.0", port=5050)
+    app.run(host="0.0.0.0", port=5050)
